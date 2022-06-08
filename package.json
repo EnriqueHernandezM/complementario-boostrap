@@ -1,0 +1,19 @@
+{
+  "name": "root",
+  "version": "1.0.0",
+  "description": "primer paquete sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EnriqueHernandezM/complementario-boostrap.git"
+  },
+  "author": "Enrique Hernandez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EnriqueHernandezM/complementario-boostrap/issues"
+  },
+  "homepage": "https://github.com/EnriqueHernandezM/complementario-boostrap#readme"
+}
