@@ -1,0 +1,13 @@
+                           /* inicia barra de navegacion*/
+.navbar  {
+    z-index: $zindexnav;
+    background: $colorbacknavbarr1;
+background: $colorbacknavbarr;
+
+   & a{
+    color: $colornavbara;
+}
+        &-logo {
+        font-size:$fontziselogonav;
+}             
+}                                          /*termina barra nav*/

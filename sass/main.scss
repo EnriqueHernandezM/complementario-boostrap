@@ -1,3 +1,6 @@
-body{
-    background-color: #fff;
-}
+@import "./partials/vars";
+@import "./partials/reset";
+@import "./partials/generales";
+@import "./partials/barranav";
+@import "./partials/estadoscuerpo";
+@import "./partials/footerimgredes";

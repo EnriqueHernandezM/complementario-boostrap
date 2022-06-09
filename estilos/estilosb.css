@@ -51,7 +51,7 @@ body{
 .post2, .post4, .post6, .post8{
     transform: rotate(-3deg);
 }
-
+                                    /*estados main*/
 .contenedor_estado{
       background-color: rgba(197, 224, 247, 0.612);
 }
@@ -59,6 +59,7 @@ body{
     width: 100%;
     height: 23rem;
 }
+                        /*termina main estados*/
 .img_dia_muertos , .img_posadas{ 
     width: 49% ;
     height:25rem;
