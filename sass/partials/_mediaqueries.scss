@@ -1,0 +1,23 @@
+
+            @media screen and (max-width:576px){
+           .grilla_index{
+                grid-template-columns: 50% 50%;
+                grid-template-areas:  "artbienvenida artbienvenida"
+                                        "imgsprincipales imgsprincipales "
+                                        "video video"
+                                        "columna columna"
+                                        "carta1 carta2"
+                                        "carta2 carta2"  
+                                        "carta3 carta3 "                      
+                ; 
+                }   
+                .imgs_principales {
+                    width:40% ;
+                    height: 10rem;
+                }
+                .columna li{   
+                padding: 1rem .5rem;
+                margin: .5rem 1px .5rem 1px;
+                } 
+               
+                }   
