@@ -122,6 +122,8 @@ $map1:(
      color4: #5386b4,
      color5: #53b4a2,
      font1: 4rem
+
+
 );
 @each $name, $color in $map1  {
     .titulo--#{$name} {
@@ -175,4 +177,4 @@ $map1:(
     @extend .boton;
     background-color: #62b453;
     font-size: 2.5rem;
-}
+}           
