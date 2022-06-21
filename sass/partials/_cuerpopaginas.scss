@@ -10,7 +10,7 @@ grid-template-areas:"artbienvenida artbienvenida artbienvenida"
                     "carta1 carta2 columna"
                     "carta3 carta3 columna"                  
 ;       
-row-gap: 5px;  
+row-gap: 3px;  
 column-gap: 7px; 
 justify-content: center;           
 justify-items: center;
@@ -18,7 +18,7 @@ align-items: center;
 }                                                                                         
 .artbienvenidaindex{
     grid-area: artbienvenida;
-    padding: 2rem; 
+    padding: 1.5rem; 
     font-size: 1.25rem;
     width: 97%;
     h2{
@@ -36,7 +36,7 @@ align-items: center;
     flex-wrap: wrap;
         width: 100%; 
     justify-content: center;       
-    .imgs_principales{
+    img{
         width:30% ;
         height:21rem;
         transition: 1s ease-out;
@@ -103,37 +103,64 @@ align-items: center;
     transform: rotate(-3deg);
 }                                          /*termina index*/
                                          /*ecosistemas*/
-#contenedor_ecosistemas img{ 
+#contenedor_ecosistemas {
+    img{ 
     height: 22rem;
 }
-#contenedor_ecosistemas h5{
+    h5{
     font-size: 175%;
 }
-.contenedor_carousel {
-    padding-top:5.50rem;
 }
+@mixin tamanoscarouseles {
+    padding-top:$paddtopcarousel;
+     height:25rem;
+} 
 .contenedor_carousel img{
-    height: 21rem;
-}
+    @include tamanoscarouseles;   
+    @include tablet;    
+    @include phablet;
+    @include cel
+}             
 $map1:(
      color1: #8840a9,
      color2: #7a53b4,
      color3: #535fb4,
      color4: #5386b4,
-     color5: #53b4a2,
-     font1: 4rem
-
-
+     color5: #53b4a2
 );
 @each $name, $color in $map1  {
     .titulo--#{$name} {
     color: $color;
     }
-}                                    /*termina ecosistemas*/
-                                    /*estados main*/
+}                      
+
+                                      /*termina ecosistemas*/
+                                        /*main lugares*/                  
+.carousel_lugares img{
+   @include tamanoscarouseles;
+    @include tablet;
+   @include phablet;
+   @include cel
+}                                              /*termina main lugares*/
+                                                           /*estados main*/
+.carousel_estados img{
+   @include tamanoscarouseles;
+   @include tablet;
+   @include phablet;
+   @include cel
+}                           
+$map2:(
+    font1: 4rem,
+    font2: 3.5rem
+);
+@each $name, $fontsize in $map2 {
+    .titulo--#{$name} {
+    font-size: $name;
+    }
+}                                                          
 .titulo_estado {
     color: map-get($map1, color1);
-    font-size: map-get($map1, font1 );
+    font-size: map-get($map2, font1 );
 }
 .contenedor_estado{
         background-color: rgba(197, 224, 247, 0.612);
@@ -147,6 +174,12 @@ $map1:(
     }
                         /*termina main estados*/
                         /*tradiciones y cultura*/
+.carousel_tradiciones img{
+     @include tamanoscarouseles;
+     @include tablet;
+     @include phablet;
+     @include cel
+}                 
 .img_dia_muertos , .img_posadas{ 
     width: 49% ;
     height:25rem;
@@ -160,7 +193,7 @@ $map1:(
     padding: 1px;
 }
 .dia_muertos h2 , .posadas h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     width: 100%;
     text-align: center;
 }

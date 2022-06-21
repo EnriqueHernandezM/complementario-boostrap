@@ -2,6 +2,7 @@
 /*variables navbarr*/
 /*variables estados*/
 /*variables footer*/
+/*carouseles*/
 * {
   /*reset*/
   margin: 0;
@@ -28,13 +29,48 @@ body {
     font-size: 175%; }
 
 /*termina barra nav*/
+/*adaptable INDEX* 992px*/
+@media screen and (max-width: 992px) {
+  .grilla_index {
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "artbienvenida artbienvenida" "imgsprincipales imgsprincipales " "video video" "carta1 columna" "carta2 columna" "carta3 columna"; }
+  .imgs_principales_cont img {
+    width: 31%;
+    height: 17rem; } }
+
+/*adaptable INDEX 576*/
+@media screen and (max-width: 576px) {
+  .grilla_index {
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "artbienvenida artbienvenida" "imgsprincipales imgsprincipales " "video video" "carta1 columna" "carta2 columna" "none columna"   "carta3 carta3 "; }
+  .imgs_principales_cont img {
+    width: 30%;
+    height: 7rem; }
+  .columna li {
+    padding: 1rem .5rem;
+    margin: .5rem 1px .5rem 1px; } }
+
+/*adaptable INDEX 360*/
+@media screen and (max-width: 360px) {
+  .grilla_index {
+    grid-template-columns: 100%;
+    grid-template-areas: "artbienvenida" "imgsprincipales" "video" "carta1" "carta2" "columna" "carta3"; }
+  .artbienvenidaindex {
+    padding: 1rem;
+    padding-top: 3rem;
+    font-size: 1rem;
+    width: 99%; }
+  .video_1 {
+    padding: .25rem;
+    height: 8rem; } }
+
 /*index*/
 .grilla_index {
   display: grid;
   grid-template-columns: 34% 34% 32%;
   grid-template-rows: repeat 6, auto;
   grid-template-areas: "artbienvenida artbienvenida artbienvenida" "imgsprincipales imgsprincipales imgsprincipales" "video video columna" "carta1 carta2 columna" "carta1 carta2 columna" "carta3 carta3 columna";
-  row-gap: 5px;
+  row-gap: 3px;
   column-gap: 7px;
   justify-content: center;
   justify-items: center;
@@ -42,7 +78,7 @@ body {
 
 .artbienvenidaindex {
   grid-area: artbienvenida;
-  padding: 2rem;
+  padding: 1.5rem;
   font-size: 1.25rem;
   width: 97%; }
   .artbienvenidaindex h2 {
@@ -59,7 +95,7 @@ body {
   flex-wrap: wrap;
   width: 100%;
   justify-content: center; }
-  .imgs_principales_cont .imgs_principales {
+  .imgs_principales_cont img {
     width: 30%;
     height: 21rem;
     transition: 1s ease-out; }
@@ -129,11 +165,19 @@ body {
 #contenedor_ecosistemas h5 {
   font-size: 175%; }
 
-.contenedor_carousel {
-  padding-top: 5.50rem; }
-
 .contenedor_carousel img {
-  height: 21rem; }
+  padding-top: 5.5rem;
+  height: 25rem; }
+  @media screen and (max-width: 992px) {
+    .contenedor_carousel img {
+      height: 19rem; } }
+  @media screen and (max-width: 576px) {
+    .contenedor_carousel img {
+      height: 14rem; } }
+  @media screen and (max-width: 360px) {
+    .contenedor_carousel img {
+      margin-top: 2rem;
+      height: 10rem; } }
 
 .titulo--color1 {
   color: #8840a9; }
@@ -150,11 +194,44 @@ body {
 .titulo--color5 {
   color: #53b4a2; }
 
-.titulo--font1 {
-  color: 4rem; }
-
 /*termina ecosistemas*/
+/*main lugares*/
+.carousel_lugares img {
+  padding-top: 5.5rem;
+  height: 25rem; }
+  @media screen and (max-width: 992px) {
+    .carousel_lugares img {
+      height: 19rem; } }
+  @media screen and (max-width: 576px) {
+    .carousel_lugares img {
+      height: 14rem; } }
+  @media screen and (max-width: 360px) {
+    .carousel_lugares img {
+      margin-top: 2rem;
+      height: 10rem; } }
+
+/*termina main lugares*/
 /*estados main*/
+.carousel_estados img {
+  padding-top: 5.5rem;
+  height: 25rem; }
+  @media screen and (max-width: 992px) {
+    .carousel_estados img {
+      height: 19rem; } }
+  @media screen and (max-width: 576px) {
+    .carousel_estados img {
+      height: 14rem; } }
+  @media screen and (max-width: 360px) {
+    .carousel_estados img {
+      margin-top: 2rem;
+      height: 10rem; } }
+
+.titulo--font1 {
+  font-size: font1; }
+
+.titulo--font2 {
+  font-size: font2; }
+
 .titulo_estado {
   color: #8840a9;
   font-size: 4rem; }
@@ -170,6 +247,20 @@ h2 {
 
 /*termina main estados*/
 /*tradiciones y cultura*/
+.carousel_tradiciones img {
+  padding-top: 5.5rem;
+  height: 25rem; }
+  @media screen and (max-width: 992px) {
+    .carousel_tradiciones img {
+      height: 19rem; } }
+  @media screen and (max-width: 576px) {
+    .carousel_tradiciones img {
+      height: 14rem; } }
+  @media screen and (max-width: 360px) {
+    .carousel_tradiciones img {
+      margin-top: 2rem;
+      height: 10rem; } }
+
 .img_dia_muertos, .img_posadas {
   width: 49%;
   height: 25rem; }
@@ -183,7 +274,7 @@ h2 {
   padding: 1px; }
 
 .dia_muertos h2, .posadas h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   width: 100%;
   text-align: center; }
 
@@ -203,14 +294,3 @@ h2 {
 /*footer*/
 .linkredes img {
   width: 10%; }
-
-@media screen and (max-width: 576px) {
-  .grilla_index {
-    grid-template-columns: 50% 50%;
-    grid-template-areas: "artbienvenida artbienvenida" "imgsprincipales imgsprincipales " "video video" "columna columna" "carta1 carta2" "carta2 carta2"   "carta3 carta3 "; }
-  .imgs_principales {
-    width: 40%;
-    height: 10rem; }
-  .columna li {
-    padding: 1rem .5rem;
-    margin: .5rem 1px .5rem 1px; } }
