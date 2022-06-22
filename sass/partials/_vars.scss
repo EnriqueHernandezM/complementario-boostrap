@@ -18,4 +18,19 @@ $fontziseh2contestados:175%;
 /*variables footer*/
 $imgsredess:10%;
 /*carouseles*/
+@mixin tamanoscarouseles {
+    padding-top:$paddtopcarousel;
+     height:25rem;
+} 
 $paddtopcarousel:5.50rem;
+$map1:(
+     color1: #8840a9,
+     color2: #7a53b4,
+     color3: #535fb4,
+     color4: #5386b4,
+     color5: #53b4a2
+);
+$map2:(
+    font1: 4rem,
+    font2: 3.5rem
+);

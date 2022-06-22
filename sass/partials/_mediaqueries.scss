@@ -1,86 +1,30 @@
 
-           /*adaptable INDEX* 992px*/
-@media screen and (max-width:992px) {
-    .grilla_index {
-    grid-template-columns: 50% 50%;
-    grid-template-areas:  "artbienvenida artbienvenida"
-                            "imgsprincipales imgsprincipales "
-                            "video video"
-                            "carta1 columna"
-                            "carta2 columna"
-                            "carta3 columna"
-    ;      
-    }
-    .imgs_principales_cont{     
-        img{
-            width:31% ;
-            height:17rem;
-        }     
-        
-    }        
-    }                                                           /*adaptable INDEX 576*/
+@mixin adaptableindex {         
+    @media screen and (max-width:992px) {
+        @content;
+        } 
+ }                                                         
+ @mixin adaptablephabletindex{
     @media screen and  (max-width:576px){
-    .grilla_index{
-    grid-template-columns: 50% 50%;
-    grid-template-areas:  "artbienvenida artbienvenida"
-                            "imgsprincipales imgsprincipales "
-                            "video video"
-                            "carta1 columna"
-                            "carta2 columna"
-                            "none columna"  
-                            "carta3 carta3 "                      
-    ; 
-    }   
-    .imgs_principales_cont{     
-        img{
-            width:30% ;
-            height:7rem;
-        }      
-    }  
-    .columna { 
-        li{ 
-        padding: 1rem .5rem;
-        margin: .5rem 1px .5rem 1px;} 
-        }    
-    }                                              /*adaptable INDEX 360*/
+        @content;
+    }  }  
+@mixin adaptablecelindex{                                        
     @media screen and  (max-width:360px){
-    .grilla_index{
-    grid-template-columns: 100%;
-    grid-template-areas:  
-                            "artbienvenida"
-                            "imgsprincipales"
-                            "video"
-                            "carta1"
-                            "carta2"
-                            "columna"
-                            "carta3"                   
-    ;      
-    } 
-    .artbienvenidaindex{
-        padding: 1rem; 
-        padding-top: 3rem;
-        font-size: 1rem;
-        width: 99%;
-        }
-        .video_1{
-        padding: .25rem;
-        height: 8rem;
+        @content;
         }         
 }
-
 @mixin tablet {
     @media screen and (max-width: 992px) {
-        height:19rem;
+        @content;
     }   
 }
 @mixin phablet{
     @media screen and (max-width: 576px) {
-        height: 14rem;
+        @content;
     }
 }
 @mixin cel {
     @media screen and (max-width: 360px) {
-        margin-top: 2rem;
-        height: 10rem;
+        @content;
     }
 }
