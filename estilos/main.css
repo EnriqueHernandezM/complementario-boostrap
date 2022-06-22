@@ -46,7 +46,7 @@ body {
       grid-template-areas: "artbienvenida artbienvenida" "imgsprincipales imgsprincipales " "video video" "carta1 columna" "carta2 columna" "carta3 carta3"; } }
   @media screen and (max-width: 576px) {
     .grilla_index {
-      grid-template-columns: 50% 50%;
+      grid-template-columns: 50%;
       grid-template-areas: "artbienvenida" "imgsprincipales" "video" "carta1" "carta2" "columna" "carta3"; } }
   @media screen and (max-width: 360px) {
     .grilla_index {
