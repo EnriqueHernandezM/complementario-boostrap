@@ -56,7 +56,7 @@ align-items: center;
     width: 97%;
     @include adaptablecelindex{
         padding: 1rem; 
-        padding-top: 3rem;
+        padding-top: .5rem;
         font-size: 1rem;
         width: 99%;
     }
@@ -109,18 +109,18 @@ align-items: center;
     grid-area: carta2;
     background-color:rgba(154, 134, 134, 0.485) ; 
     align-self: start;
-}
-.articulo_2index a:visited{
+
+    a:visited{
     color:rgba(138, 130, 55, 0.892)
 }
-.articulo_2index img{
+     img{
     width: 23rem;
     padding: .5rem;
     width: 100%;
     @include adaptablephabletindex{
         padding: 1.5rem;
     }
-}
+}}
 .articulo_1index h2, .articulo_2index h2 {
     padding: .7rem;
     font-size: 1.80rem; 
@@ -167,7 +167,7 @@ align-items: center;
     @include tamanoscarouseles;   
     @include tablet { height:19rem;}    
     @include phablet{ height: 14rem;}
-    @include cel{margin-top: 2rem;
+    @include cel{padding-top: 4.4rem;
         height: 10rem;}
 }             
 @each $name, $color in $map1  {
@@ -181,7 +181,7 @@ align-items: center;
    @include tamanoscarouseles;
    @include tablet { height:19rem;}    
    @include phablet{ height: 14rem;}
-   @include cel{margin-top: 2rem;
+   @include cel{padding-top: 4.4rem;
        height: 10rem;}
 }           
 .tarjetas_lugares{
@@ -200,7 +200,7 @@ align-items: center;
    @include tamanoscarouseles;
    @include tablet { height:19rem;}    
     @include phablet{ height: 14rem;}
-    @include cel{margin-top: 2rem;
+    @include cel{padding-top: 4.4rem;
         height: 10rem;}
 }                           
 @each $name, $fontsize in $map2 {
@@ -229,12 +229,21 @@ align-items: center;
      @include tamanoscarouseles;
      @include tablet { height:19rem;}    
      @include phablet{ height: 14rem;}
-     @include cel{margin-top: 2rem;
+     @include cel{padding-top: 4.4rem;
          height: 10rem;}
 }                 
 .img_dia_muertos , .img_posadas{ 
     width: 49% ;
-    height:25rem;
+    height:23rem;
+    @include adaptableindex{
+        height:17rem ;
+    }
+    @include adaptablephabletindex{
+        height: 14rem;
+    }
+    @include adaptablecelindex{
+        height: 8rem;
+    }
 }
 .dia_muertos, .posadas { 
     display: flex;

@@ -27,6 +27,9 @@ body {
     color: aliceblue; }
   .navbar-logo {
     font-size: 175%; }
+    @media screen and (max-width: 360px) {
+      .navbar-logo {
+        font-size: 115%; } }
 
 /*termina barra nav*/
 /*index*/
@@ -61,7 +64,7 @@ body {
   @media screen and (max-width: 360px) {
     .artbienvenidaindex {
       padding: 1rem;
-      padding-top: 3rem;
+      padding-top: .5rem;
       font-size: 1rem;
       width: 99%; } }
   .artbienvenidaindex h1 {
@@ -111,17 +114,15 @@ body {
   grid-area: carta2;
   background-color: rgba(154, 134, 134, 0.485);
   align-self: start; }
-
-.articulo_2index a:visited {
-  color: rgba(138, 130, 55, 0.892); }
-
-.articulo_2index img {
-  width: 23rem;
-  padding: .5rem;
-  width: 100%; }
-  @media screen and (max-width: 576px) {
-    .articulo_2index img {
-      padding: 1.5rem; } }
+  .articulo_2index a:visited {
+    color: rgba(138, 130, 55, 0.892); }
+  .articulo_2index img {
+    width: 23rem;
+    padding: .5rem;
+    width: 100%; }
+    @media screen and (max-width: 576px) {
+      .articulo_2index img {
+        padding: 1.5rem; } }
 
 .articulo_1index h2, .articulo_2index h2 {
   padding: .7rem;
@@ -172,7 +173,7 @@ body {
       height: 14rem; } }
   @media screen and (max-width: 360px) {
     .contenedor_carousel img {
-      margin-top: 2rem;
+      padding-top: 4.4rem;
       height: 10rem; } }
 
 .titulo--color1 {
@@ -203,7 +204,7 @@ body {
       height: 14rem; } }
   @media screen and (max-width: 360px) {
     .carousel_lugares img {
-      margin-top: 2rem;
+      padding-top: 4.4rem;
       height: 10rem; } }
 
 .tarjetas_lugares img {
@@ -226,7 +227,7 @@ body {
       height: 14rem; } }
   @media screen and (max-width: 360px) {
     .carousel_estados img {
-      margin-top: 2rem;
+      padding-top: 4.4rem;
       height: 10rem; } }
 
 .titulo--font1 {
@@ -261,12 +262,21 @@ h2 {
       height: 14rem; } }
   @media screen and (max-width: 360px) {
     .carousel_tradiciones img {
-      margin-top: 2rem;
+      padding-top: 4.4rem;
       height: 10rem; } }
 
 .img_dia_muertos, .img_posadas {
   width: 49%;
-  height: 25rem; }
+  height: 23rem; }
+  @media screen and (max-width: 992px) {
+    .img_dia_muertos, .img_posadas {
+      height: 17rem; } }
+  @media screen and (max-width: 576px) {
+    .img_dia_muertos, .img_posadas {
+      height: 14rem; } }
+  @media screen and (max-width: 360px) {
+    .img_dia_muertos, .img_posadas {
+      height: 8rem; } }
 
 .dia_muertos, .posadas {
   display: flex;

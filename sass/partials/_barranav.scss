@@ -9,5 +9,8 @@ background: $colorbacknavbarr;
 }
         &-logo {
         font-size:$fontziselogonav;
+        @include adaptablecelindex{
+            font-size: 115%;
+        }
 }             
 }                                          /*termina barra nav*/
