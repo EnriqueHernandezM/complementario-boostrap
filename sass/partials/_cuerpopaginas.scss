@@ -22,18 +22,18 @@ align-items: center;
                                 "video video"
                                 "carta1 columna"
                                 "carta2 columna"
-                                "carta3 columna"
+                                "carta3 carta3"
         ;      
 }
 @include adaptablephabletindex{
     grid-template-columns: 50% 50%;
-    grid-template-areas:  "artbienvenida artbienvenida"
-                            "imgsprincipales imgsprincipales "
-                            "video video"
-                            "carta1 columna"
-                            "carta2 columna"
-                            "none columna"  
-                            "carta3 carta3 "                      
+    grid-template-areas:        "artbienvenida"
+                                "imgsprincipales"
+                                "video"
+                                "carta1"
+                                "carta2"
+                                "columna"
+                                "carta3"                      
     ; 
 }
 @include adaptablecelindex{
