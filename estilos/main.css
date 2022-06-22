@@ -46,7 +46,7 @@ body {
       grid-template-areas: "artbienvenida artbienvenida" "imgsprincipales imgsprincipales " "video video" "carta1 columna" "carta2 columna" "carta3 carta3"; } }
   @media screen and (max-width: 576px) {
     .grilla_index {
-      grid-template-columns: 50%;
+      grid-template-columns: 100%;
       grid-template-areas: "artbienvenida" "imgsprincipales" "video" "carta1" "carta2" "columna" "carta3"; } }
   @media screen and (max-width: 360px) {
     .grilla_index {
@@ -119,6 +119,9 @@ body {
   width: 23rem;
   padding: .5rem;
   width: 100%; }
+  @media screen and (max-width: 576px) {
+    .articulo_2index img {
+      padding: 1.5rem; } }
 
 .articulo_1index h2, .articulo_2index h2 {
   padding: .7rem;
@@ -280,16 +283,41 @@ h2 {
 
 /*/termmina tradiciones y cultura*/
 /*comunidad*/
-.boton, .boton--m {
+.boton, .boton--m, .boton--m2 {
   background-color: #6595be;
-  font-size: 2rem;
-  padding: 1rem;
+  font-size: 1rem;
+  padding: .5rem;
   display: block;
-  margin: 5%auto; }
+  margin: 5%auto 1%;
+  border-radius: 10%; }
 
 .boton--m {
   background-color: #62b453;
-  font-size: 2.5rem; }
+  font-size: 1.2rem; }
+
+.boton--m2 {
+  font-size: 1.5rem;
+  background-color: #27b27d; }
+
+.anuncio {
+  font-size: 2rem;
+  background: #54954a;
+  background: linear-gradient(90deg, #5ba150 25%, #073e00 92%);
+  padding: .25rem;
+  width: 20%;
+  display: inline-block;
+  position: absolute;
+  top: 40rem;
+  right: 6rem; }
+  @media screen and (max-width: 992px) {
+    .anuncio {
+      display: none; } }
+  @media screen and (max-width: 576px) {
+    .anuncio {
+      display: none; } }
+  @media screen and (max-width: 360px) {
+    .anuncio {
+      display: none; } }
 
 /*footer*/
 .linkredes img {

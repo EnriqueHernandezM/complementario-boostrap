@@ -26,7 +26,7 @@ align-items: center;
         ;      
 }
 @include adaptablephabletindex{
-    grid-template-columns: 50%;
+    grid-template-columns: 100%;
     grid-template-areas:        "artbienvenida"
                                 "imgsprincipales"
                                 "video"
@@ -117,6 +117,9 @@ align-items: center;
     width: 23rem;
     padding: .5rem;
     width: 100%;
+    @include adaptablephabletindex{
+        padding: 1.5rem;
+    }
 }
 .articulo_1index h2, .articulo_2index h2 {
     padding: .7rem;
@@ -124,8 +127,7 @@ align-items: center;
 }
 .articulo_3index{
     grid-area: carta3;
-    background-color:rgba(154, 134, 134, 0.485) ; 
-    
+    background-color:rgba(154, 134, 134, 0.485) ;  
     align-self: center;
 }
 .columna{
@@ -251,13 +253,41 @@ align-items: center;
                                           /*comunidad*/
 .boton{
      background-color: #6595be;
-    font-size: 2rem;
-    padding: 1rem;
+    font-size: 1rem;
+    padding: .5rem;
     display: block;
-    margin: 5%auto;
+    margin: 5%auto 1%;
+    border-radius: 10%
+    
 }
 .boton--m{
     @extend .boton;
     background-color: #62b453;
-    font-size: 2.5rem;
-}           
+    font-size: 1.2rem;
+}     
+.boton--m2{
+    @extend .boton;
+    font-size: 1.5rem;
+    background-color: rgb(39, 178, 125);
+}  
+.anuncio{
+    font-size: 2rem;
+    background: rgb(84, 149, 74);
+background: linear-gradient(90deg, rgb(91, 161, 80) 25%, rgba(7,62,0,1) 92%);
+    padding: .25rem;
+    width: 20% ;
+    display: inline-block;
+    position: absolute;
+    top: 40rem;
+    right: 6rem;
+    @include adaptableindex{
+        display: none;
+    }
+    @include adaptablephabletindex{
+        display: none;
+    }
+    @include adaptablecelindex {
+        display: none ;
+    }
+    
+}
