@@ -10,7 +10,7 @@ $fontziselogonav: 175%;
 $colorbacknavbarr1:rgb(150, 149, 172);
 $colorbacknavbarr:linear-gradient(180deg, rgba(6,0,209,1) 11%, rgba(69,78,115,1) 45%, rgba(11,0,13,1) 100%);
 /*variables estados*/
-$backgcolcontestado:rgba(197, 224, 247, 0.612);
+$backgcolcontestado:rgba(197, 224, 247, 0.332);
 $wimgcontestados:100%;
 $himgcontestados:23rem;
 $fontziseh2contestados:175%;
@@ -34,3 +34,30 @@ $map2:(
     font1: 4rem,
     font2: 3.5rem
 );
+$map4:(
+    nuevoh1: rgba(252, 200, 104, 0.807),
+    nuevoh2: rgba(233, 147, 147, 0.807),
+    nuevoh3: rgba(148, 242, 101, 0.807),
+    nuevoh4: rgba(244, 145, 196, 0.807),
+    nuevoh5: rgba(104, 252, 213, 0.807),
+    nuevoh6: rgba(71, 195, 237, 0.807),
+);
+$map5:(
+     pin1: (-50px ),
+     pin2: (-50px ),
+     pin3: (-50px),
+     pin4: (-50px),
+     pin5: (-50px ),
+     pin6: (-50px ),
+     pin7: (-50px),
+     pin8: (-50px),
+     pin9: (-50px)
+);
+@mixin pin {
+    top: -50px;
+    position: relative;
+    left: 50%;
+    width: 2rem;
+    filter: drop-shadow(5px 5px 6px black);
+}
+$colortextoartculuos:rgb(0, 0, 0);

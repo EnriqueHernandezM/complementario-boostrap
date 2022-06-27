@@ -12,5 +12,10 @@ background: $colorbacknavbarr;
         @include adaptablecelindex{
             font-size: 115%;
         }
-}             
-}                                          /*termina barra nav*/
+}    
+         
+}         
+.boton_coll{
+    color: rgb(61, 93, 93);
+    background-color: rgba(152, 161, 167, 0.789);
+}                         /*termina barra nav*/

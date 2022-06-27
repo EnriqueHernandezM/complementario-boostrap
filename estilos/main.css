@@ -31,11 +31,15 @@ body {
       .navbar-logo {
         font-size: 115%; } }
 
+.boton_coll {
+  color: #3d5d5d;
+  background-color: rgba(152, 161, 167, 0.789); }
+
 /*termina barra nav*/
 /*index*/
 .grilla_index {
   display: grid;
-  grid-template-columns: 34% 34% 32%;
+  grid-template-columns: 33% 34% 32%;
   grid-template-rows: repeat 6, auto;
   grid-template-areas: "artbienvenida artbienvenida artbienvenida" "imgsprincipales imgsprincipales imgsprincipales" "video video columna" "carta1 carta2 columna" "carta1 carta2 columna" "carta3 carta3 columna";
   row-gap: 3px;
@@ -60,7 +64,8 @@ body {
   grid-area: artbienvenida;
   padding: 1.5rem;
   font-size: 1.25rem;
-  width: 97%; }
+  width: 97%;
+  color: black; }
   @media screen and (max-width: 360px) {
     .artbienvenidaindex {
       padding: 1rem;
@@ -75,6 +80,7 @@ body {
     padding: .50rem; }
 
 .imgs_principales_cont {
+  filter: drop-shadow(9px 9px 9px black);
   grid-area: imgsprincipales;
   display: flex;
   flex-direction: row;
@@ -84,7 +90,8 @@ body {
   .imgs_principales_cont img {
     width: 30%;
     height: 21rem;
-    transition: 1s ease-out; }
+    transition: 1s ease-out;
+    object-fit: cover; }
     @media screen and (max-width: 992px) {
       .imgs_principales_cont img {
         width: 31%;
@@ -108,12 +115,14 @@ body {
 .articulo_1index {
   grid-area: carta1;
   background-color: rgba(154, 134, 134, 0.485);
-  align-self: start; }
+  align-self: start;
+  color: black; }
 
 .articulo_2index {
   grid-area: carta2;
   background-color: rgba(154, 134, 134, 0.485);
-  align-self: start; }
+  align-self: start;
+  color: black; }
   .articulo_2index a:visited {
     color: rgba(138, 130, 55, 0.892); }
   .articulo_2index img {
@@ -131,7 +140,8 @@ body {
 .articulo_3index {
   grid-area: carta3;
   background-color: rgba(154, 134, 134, 0.485);
-  align-self: center; }
+  align-self: center;
+  color: black; }
 
 .columna {
   grid-area: columna;
@@ -148,17 +158,37 @@ body {
     list-style: lower-roman;
     background: rgba(241, 186, 124, 0.941);
     padding: 2rem 1rem;
-    list-style: none; }
+    list-style: none;
+    color: black; }
     @media screen and (max-width: 576px) {
       .columna li {
         padding: 1rem .5rem;
         margin: .5rem 1px .5rem 1px; } }
 
 .post1, .post3, .post5, .post7, .post9 {
-  transform: rotate(3deg); }
+  transform: rotate(3deg);
+  border-radius: 2%;
+  filter: drop-shadow(7px 7px 9px black); }
+  .post1 img, .post3 img, .post5 img, .post7 img, .post9 img {
+    top: -50px;
+    position: relative;
+    left: 50%;
+    width: 2rem;
+    filter: drop-shadow(5px 5px 6px black); }
 
 .post2, .post4, .post6, .post8 {
-  transform: rotate(-3deg); }
+  border-radius: 2%;
+  transform: rotate(-3deg);
+  filter: drop-shadow(7px 7px 9px black); }
+  .post2 img, .post4 img, .post6 img, .post8 img {
+    top: -50px;
+    position: relative;
+    left: 50%;
+    width: 2rem;
+    filter: drop-shadow(5px 5px 6px black); }
+
+.carousel_index img {
+  height: 35rem; }
 
 /*termina index*/
 /*ecosistemas*/
@@ -207,12 +237,44 @@ body {
       padding-top: 4.4rem;
       height: 10rem; } }
 
+.tarjetas_lugares article {
+  background-color: rgba(197, 224, 247, 0.332); }
+  @media screen and (max-width: 576px) {
+    .tarjetas_lugares article {
+      padding-bottom: .11rem; } }
+
 .tarjetas_lugares img {
   filter: drop-shadow(7px 7px 9px black);
-  height: 25rem; }
+  height: 25rem;
+  width: 95%; }
+  @media screen and (max-width: 576px) {
+    .tarjetas_lugares img {
+      height: 15rem;
+      width: 90%; } }
 
 .tarjetas_lugares p {
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  padding: .75rem;
+  text-align: left;
+  color: black; }
+
+.color--nuevoh1 {
+  color: rgba(252, 200, 104, 0.807); }
+
+.color--nuevoh2 {
+  color: rgba(233, 147, 147, 0.807); }
+
+.color--nuevoh3 {
+  color: rgba(148, 242, 101, 0.807); }
+
+.color--nuevoh4 {
+  color: rgba(244, 145, 196, 0.807); }
+
+.color--nuevoh5 {
+  color: rgba(104, 252, 213, 0.807); }
+
+.color--nuevoh6 {
+  color: rgba(71, 195, 237, 0.807); }
 
 /*termina main lugares*/
 /*estados main*/
@@ -240,13 +302,14 @@ body {
   color: #8840a9; }
 
 .contenedor_estado {
-  background-color: rgba(197, 224, 247, 0.612); }
+  background-color: rgba(197, 224, 247, 0.332); }
   .contenedor_estado img {
     filter: drop-shadow(7px 7px 7px black);
-    width: 100%;
+    width: 95%;
     height: 23rem; }
 
 h2 {
+  color: black;
   font-size: 175%; }
 
 /*termina main estados*/

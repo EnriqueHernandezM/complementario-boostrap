@@ -1,7 +1,7 @@
 {
-  "name": "root",
+  "name": "conoce mexico",
   "version": "1.0.0",
-  "description": "primer paquete",
+  "description": "adentrate a lo mas bello de la republica mexicana",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
