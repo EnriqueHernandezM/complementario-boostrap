@@ -338,4 +338,71 @@ background: linear-gradient(90deg, rgb(91, 161, 80) 25%, rgba(7,62,0,1) 92%);
     @include adaptablecelindex {
         display: none ;
     } 
+}                                                   
+.animacion_tierra{
+    img{
+        z-index: 2;
+        position: relative;
+        bottom: 0px;
+        width: 10%;
+        animation-name: prueba;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-duration: 7s ;
+        animation-delay: 2s ;
+    }
+    p { 
+        z-index: 1;
+        position:absolute;
+        top:145%;
+        color: #62b453;
+        font-size: 3rem;
+        animation-name: prueba2;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-duration: 7s ;
+        animation-delay: 2.5s ;
+        opacity: 0;
+    }
+    @include adaptableindex{
+        display: none;
+    }
+    @include adaptablephabletindex{
+        display: none;
+    }
+    @include adaptablecelindex {
+        display: none ;
+    } 
+}
+@keyframes prueba{
+    0% {
+        transform: translatex( 0rem);
+    }
+    50%{
+       transform: translatex( 85rem) rotate(250deg) ;  
+    }
+    75%{
+        transform: translatex(0rem) rotate(-250deg) ; 
+    }
+    100%{
+        transform:translateX(2.7rem) scale(1.7);
+    }
+}
+@keyframes prueba2{
+    0% {
+        transform: translatex( 35rem);
+        opacity: 0;
+    }
+    50%{ 
+       opacity: 0; 
+    }
+    80%{
+        opacity:.5; 
+    }
+    96%{ opacity: 1;
+    }
+    100%{
+        transform: translatex(35rem) ; 
+       opacity: 0;
+    }
 }
