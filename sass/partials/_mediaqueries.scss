@@ -13,6 +13,11 @@
         @content;
         }         
 }
+@mixin compumini {
+    @media screen and (max-width:1250px){
+        @content;
+    }
+}
 @mixin tablet {
     @media screen and (max-width: 992px) {
         @content;

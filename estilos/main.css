@@ -356,91 +356,62 @@ h2 {
 
 /*/termmina tradiciones y cultura*/
 /*comunidad*/
-.boton, .boton--m, .boton--m2 {
+.boton {
   background-color: #6595be;
-  font-size: 1rem;
-  padding: .5rem;
+  font-size: 1.7rem;
+  padding: .4rem;
   display: block;
   margin: 5%auto 1%;
   border-radius: 10%; }
 
-.boton--m {
-  background-color: #62b453;
-  font-size: 1.2rem; }
-
-.boton--m2 {
-  font-size: 1.5rem;
-  background-color: #27b27d; }
-
-.anuncio {
-  font-size: 2rem;
-  background: #54954a;
-  background: linear-gradient(90deg, #5ba150 25%, #073e00 92%);
-  padding: .25rem;
-  width: 20%;
-  display: inline-block;
-  position: absolute;
-  top: 45rem;
-  right: 6rem; }
+.animacion_tierra {
+  display: flex;
+  width: 100%; }
+  .animacion_tierra img {
+    z-index: 2;
+    width: 10%;
+    animation-name: prueba;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 7s;
+    animation-delay: 2s; }
+  .animacion_tierra p {
+    align-self: center;
+    z-index: 1;
+    color: #b0dcf7;
+    font-size: 3rem;
+    animation-name: prueba2;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 7s;
+    animation-delay: 2.5s;
+    opacity: 0;
+    margin-left: 21rem; }
+  @media screen and (max-width: 1250px) {
+    .animacion_tierra {
+      display: none; } }
   @media screen and (max-width: 992px) {
-    .anuncio {
+    .animacion_tierra {
       display: none; } }
   @media screen and (max-width: 576px) {
-    .anuncio {
+    .animacion_tierra {
       display: none; } }
   @media screen and (max-width: 360px) {
-    .anuncio {
+    .animacion_tierra {
       display: none; } }
-
-.animacion_tierra img {
-  z-index: 2;
-  position: relative;
-  bottom: 0px;
-  width: 10%;
-  animation-name: prueba;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in;
-  animation-duration: 7s;
-  animation-delay: 2s; }
-
-.animacion_tierra p {
-  z-index: 1;
-  position: absolute;
-  top: 145%;
-  color: #62b453;
-  font-size: 3rem;
-  animation-name: prueba2;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in;
-  animation-duration: 7s;
-  animation-delay: 2.5s;
-  opacity: 0; }
-
-@media screen and (max-width: 992px) {
-  .animacion_tierra {
-    display: none; } }
-
-@media screen and (max-width: 576px) {
-  .animacion_tierra {
-    display: none; } }
-
-@media screen and (max-width: 360px) {
-  .animacion_tierra {
-    display: none; } }
 
 @keyframes prueba {
   0% {
     transform: translatex(0rem); }
   50% {
-    transform: translatex(85rem) rotate(250deg); }
+    transform: translatex(81rem) rotate(250deg); }
   75% {
-    transform: translatex(0rem) rotate(-250deg); }
+    transform: rotate(-250deg); }
   100% {
-    transform: translateX(2.7rem) scale(1.7); } }
+    transform: translateX(0rem); } }
 
 @keyframes prueba2 {
   0% {
-    transform: translatex(35rem);
     opacity: 0; }
   50% {
     opacity: 0; }
@@ -449,7 +420,6 @@ h2 {
   96% {
     opacity: 1; }
   100% {
-    transform: translatex(35rem);
     opacity: 0; } }
 
 /*footer*/
