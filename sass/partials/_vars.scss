@@ -7,8 +7,8 @@ $colorbody:linear-gradient(180deg, rgba(5,88,130,1) 9%, rgba(6,119,81,1) 23%, rg
 $zindexnav:3;
 $colornavbara:rgb(240, 248, 255);
 $fontziselogonav: 175%;
-$colorbacknavbarr1:rgb(150, 149, 172);
-$colorbacknavbarr:linear-gradient(180deg, rgba(6,0,209,1) 11%, rgba(69,78,115,1) 45%, rgba(11,0,13,1) 100%);
+$colorbacknavbarr1:rgb(11, 11, 11);
+$colorbacknavbarr:linear-gradient(180deg, rgb(46, 40, 227) 11%, rgba(69,78,115,1) 45%, rgb(27, 24, 27) 100%);
 /*variables estados*/
 $backgcolcontestado:rgba(197, 224, 247, 0.332);
 $wimgcontestados:100%;
@@ -20,7 +20,7 @@ $imgsredess:10%;
 /*carouseles*/
 @mixin tamanoscarouseles {
     padding-top:$paddtopcarousel;
-     height:25rem;
+     height:27rem;
 } 
 $paddtopcarousel:5.50rem;
 $map1:(
@@ -61,3 +61,68 @@ $map5:(
     filter: drop-shadow(5px 5px 6px black);
 }
 $colortextoartculuos:rgb(0, 0, 0);
+@mixin animacionpaginasenproceso{
+    h2{
+        color: rgb(249, 232, 76);
+        font-size:4rem;
+        @include tablet{
+            font-size: 2rem;
+        }
+        @include phablet{
+            font-size: 1.2rem;
+        }
+        @include cel{
+            font-size: .75rem;
+        }
+        animation-name: mar;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-duration: 10s ;
+        z-index: 1;
+        position: relative;
+        bottom: 20rem;
+    }
+        img{
+            position: relative;
+            top: -12rem;
+            width: 100%;
+            height: 70rem;
+            z-index: 2;
+            opacity: 0.5;
+        }
+        @keyframes mar{
+            0% {
+                transform: rotate(0deg) translatex(0rem) translateY(0rem) ;
+            }
+            10%{
+                transform:  rotate(3deg) translatex(-4rem) translateY(-6rem) ;  
+            }
+            20%{
+                transform:  rotate(-3deg) translatex(4rem) translateY(-13rem) ;
+            }
+            30%{
+                transform:  rotate(3deg) translatex(-4rem) translateY(-24rem) ; 
+            }
+            40%{
+                transform:  rotate(-3deg) translatex(5rem) translateY(-33rem) ; 
+            }
+            50%{
+                 transform:  rotate(3deg) translatex(-5rem) translateY(-45rem) ;
+            }
+            60%{
+                transform: rotate(-3deg)  translatex(4rem) translateY(-33rem) ;
+            }
+            70%{
+                transform: rotate(3deg)  translatex(-5rem) translateY(-24rem) ; 
+            }
+            80%{
+                transform: rotate(-3deg) translatex(4rem) translateY(-13rem) ;
+            }
+            90%{
+                transform:rotate(3deg) translatex(-4rem) translateY(-6rem) ;
+            }
+            100%{
+                transform: rotate(0deg) translateX(0rem) translateY(0rem) ;
+            }
+        }
+}
