@@ -55,16 +55,16 @@ align-items: center;
     font-size: 1.25rem;
     width: 97%;
     color: $colortextoartculuos;
-    @include cel{
-        padding: 1rem; 
-        padding-top: .5rem;
-        font-size: 1rem;
-        width: 99%;
-    }
+        @include cel{
+            padding: 1rem; 
+            padding-top: .5rem;
+            font-size: 1rem;
+            width: 99%;
+        }
     h1{
-        font-size: 2.25rem;
-        text-align: center;
-        padding: .45rem;
+    font-size: 2.25rem;
+    text-align: center;
+    padding: .45rem;
     }
     p{
         padding: .50rem; }
@@ -78,10 +78,10 @@ align-items: center;
         width: 100%; 
     justify-content: center;       
     img{
-        width:30% ;
-        height:21rem;
-        transition: 1s ease-out;
-        object-fit: cover;
+    width:30% ;
+    height:21rem;
+    transition: 1s ease-out;
+    object-fit: cover;
         @include tablet{
             width:31% ;
             height:17rem;
@@ -157,10 +157,10 @@ align-items: center;
         padding: 2rem 1rem;
         list-style:none ;  
         color: $colortextoartculuos;
-    @include phablet{
-        padding: 1rem .5rem;
-        margin: .5rem 1px .5rem 1px;
-    }
+        @include phablet{
+            padding: 1rem .5rem;
+            margin: .5rem 1px .5rem 1px;
+        }
     }
 }
 .post1, .post3, .post5, .post7, .post9{
@@ -181,7 +181,7 @@ align-items: center;
 }    
 .carousel_index{
     img{
-        height: 25rem;
+    height: 25rem;
         @include phablet{
             height: 20rem;
         }
@@ -199,18 +199,18 @@ align-items: center;
     animation-timing-function: ease-in;
     animation-duration: 7s ;
     animation-delay: 0.5s ;
-    @include compumini{
-        display: none;
-    }
-    @include tablet{
-        display: none;
-    }
-    @include phablet{
-        display: none;
-    }
-    @include cel {
-        display: none ;
-    }  
+        @include compumini{
+            display: none;
+        }
+        @include tablet{
+            display: none;
+        }
+        @include phablet{
+            display: none;
+        }
+        @include cel {
+            display: none ;
+        }  
 }     
 @keyframes angel{
     0% {
@@ -225,7 +225,7 @@ align-items: center;
 }    
                                         /*termina index*/
                                          /*ecosistemas*/
-
+                                        
 .contenedor_carousel img{
     @include tamanoscarouseles;   
     @include tablet { height:19rem;}    
@@ -249,27 +249,27 @@ align-items: center;
 }           
 .tarjetas_lugares{
     article{
-      background-color:$backgcolcontestado ;
-      border-radius: 2%;
+    background-color:$backgcolcontestado ;
+    border-radius: 2%;
       @include phablet{
         padding-bottom: .11rem;
       }
     }
     img{  
-        filter: drop-shadow(7px 7px 9px black);
-        height: 25rem;   
-        width: 95%;
-        border-radius: 1%;
+    filter: drop-shadow(7px 7px 9px black);
+    height: 25rem;   
+    width: 95%;
+    border-radius: 1%;
         @include phablet{
             height: 15rem;
             width: 90%;
         }
     }
     p{
-        margin-top: 1rem;
-        padding: .75rem;
-        text-align:left;
-        color: $colortextoartculuos;
+    margin-top: 1rem;
+    padding: .75rem;
+    text-align:left;
+    color: $colortextoartculuos;
     }
 }
 @each $name, $color in $map4{
@@ -284,7 +284,7 @@ align-items: center;
    @include tablet { height:19rem;}    
     @include phablet{ height: 14rem;}
     @include cel{padding-top: 4.4rem;
-        height: 10rem;}
+    height: 10rem;}
 }                           
 @each $name, $fontsize in $map2 {
     .titulo--#{$name} {
@@ -299,26 +299,26 @@ align-items: center;
         height: 25rem;
     }
     img{
-        border-radius: 1%;
-        filter: drop-shadow(7px 7px 7px black);
-        width: 95%;
-        height: 25rem; 
-        transition: opacity 1.5s ease-in-out;
+    border-radius: 1%;
+    filter: drop-shadow(7px 7px 7px black);
+    width: 95%;
+    height: 25rem; 
+    transition: opacity 1.5s ease-in-out;
         @include phablet{
             height: 18rem;
         }
     }
     h2{
-        color: $colortextoartculuos;
-        font-size: $fontziseh2contestados;
+    color: $colortextoartculuos;
+    font-size: $fontziseh2contestados;
     }
  }
  .contenedor_estado img.cambio{ 
     position: relative;
     top: -25rem;
-    @include phablet{
-        top: -18rem;
-    }
+        @include phablet{
+            top: -18rem;
+        }
 }
 .contenedor_estado img.cambio:hover { 
     opacity:0;
@@ -335,15 +335,15 @@ align-items: center;
 .img_dia_muertos , .img_posadas{ 
     width: 49% ;
     height:22rem;
-    @include tablet{
-        height:16rem ;
-    }
-    @include phablet{
-        height: 12rem;
-    }
-    @include cel{
-        height: 6rem;
-    }
+        @include tablet{
+            height:16rem ;
+        }
+        @include phablet{
+            height: 12rem;
+        }
+        @include cel{
+            height: 6rem;
+        }
 }
 .dia_muertos, .posadas, .dia_independencia { 
     display: flex;
@@ -362,7 +362,7 @@ align-items: center;
                                                                          /*comunidad*/
                                           
 .boton{
-     background-color: #6595be;
+    background-color: #6595be;
     font-size: 1.7rem;
     padding: .4rem;
     display: block;
@@ -374,39 +374,39 @@ align-items: center;
     display: flex;
    width: 100%;
     img{
-        z-index: 2;
-        width: 10%;
-        animation-name: prueba;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in;
-        animation-duration: 7s ;
-        animation-delay: 2s ;
+    z-index: 2;
+    width: 10%;
+    animation-name: prueba;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 7s ;
+    animation-delay: 2s ;
     }
     p { 
-        align-self: center;
-        z-index: 1;
-        color: rgb(176, 220, 247);
-        font-size: 3rem;
-        animation-name: prueba2;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in;
-        animation-duration: 7s ;
-        animation-delay: 2.5s ;
-        opacity: 0;
-        margin-left: 21rem;
+    align-self: center;
+    z-index: 1;
+    color: rgb(176, 220, 247);
+    font-size: 3rem;
+    animation-name: prueba2;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 7s ;
+    animation-delay: 2.5s ;
+    opacity: 0;
+    margin-left: 21rem;
     }
-    @include compumini{
-        display: none;
-    }
-    @include tablet{
-        display: none;
-    }
-    @include phablet{
-        display: none;
-    }
-    @include cel {
-        display: none ;
-    } 
+        @include compumini{
+            display: none;
+        }
+        @include tablet{
+            display: none;
+        }
+        @include phablet{
+            display: none;
+        }
+        @include cel {
+            display: none ;
+        } 
 }
 @keyframes prueba{
     0% {
