@@ -15,7 +15,7 @@ column-gap: 7px;
 justify-content: center;           
 justify-items: center;
 align-items: center;
-@include adaptableindex{
+@include tablet{
     grid-template-columns: 50% 50%;
         grid-template-areas:  "artbienvenida artbienvenida"
                                 "imgsprincipales imgsprincipales "
@@ -25,7 +25,7 @@ align-items: center;
                                 "carta3 carta3"
         ;      
 }
-@include adaptablephabletindex{
+@include phablet{
     grid-template-columns: 100%;
     grid-template-areas:        "artbienvenida"
                                 "imgsprincipales"
@@ -36,7 +36,7 @@ align-items: center;
                                 "carta3"                      
     ; 
 }
-@include adaptablecelindex{
+@include cel{
     grid-template-columns: 100%;
     grid-template-areas:  
                             "artbienvenida"
@@ -55,7 +55,7 @@ align-items: center;
     font-size: 1.25rem;
     width: 97%;
     color: $colortextoartculuos;
-    @include adaptablecelindex{
+    @include cel{
         padding: 1rem; 
         padding-top: .5rem;
         font-size: 1rem;
@@ -82,11 +82,11 @@ align-items: center;
         height:21rem;
         transition: 1s ease-out;
         object-fit: cover;
-        @include adaptableindex{
+        @include tablet{
             width:31% ;
             height:17rem;
         }
-        @include adaptablephabletindex{
+        @include phablet{
             width:30% ;
             height:7rem;
         }
@@ -99,7 +99,7 @@ align-items: center;
     padding: 1rem;
     width: 70%; 
     height: 25rem;
-    @include adaptablecelindex{
+    @include cel{
         padding: .25rem;
         height: 8rem;
     }
@@ -124,7 +124,7 @@ align-items: center;
     width: 23rem;
     padding: .5rem;
     width: 100%;
-    @include adaptablephabletindex{
+    @include phablet{
         padding: 1.5rem;
     }
 }}
@@ -135,7 +135,7 @@ align-items: center;
 .articulo_3index{
     grid-area: carta3;
     background-color:rgba(154, 134, 134, 0.485) ;  
-    align-self: center;
+    align-self: flex-start;
     color: rgb(0, 0, 0);
     border-radius: 3%;
 }
@@ -157,7 +157,7 @@ align-items: center;
         padding: 2rem 1rem;
         list-style:none ;  
         color: $colortextoartculuos;
-    @include adaptablephabletindex{
+    @include phablet{
         padding: 1rem .5rem;
         margin: .5rem 1px .5rem 1px;
     }
@@ -181,7 +181,13 @@ align-items: center;
 }    
 .carousel_index{
     img{
-        height: 35rem;
+        height: 25rem;
+        @include phablet{
+            height: 20rem;
+        }
+        @include cel {
+            height: 14rem;
+        }
     }
 }
 .animacion_index{
@@ -196,13 +202,13 @@ align-items: center;
     @include compumini{
         display: none;
     }
-    @include adaptableindex{
+    @include tablet{
         display: none;
     }
-    @include adaptablephabletindex{
+    @include phablet{
         display: none;
     }
-    @include adaptablecelindex {
+    @include cel {
         display: none ;
     }  
 }     
@@ -244,6 +250,7 @@ align-items: center;
 .tarjetas_lugares{
     article{
       background-color:$backgcolcontestado ;
+      border-radius: 2%;
       @include phablet{
         padding-bottom: .11rem;
       }
@@ -252,6 +259,7 @@ align-items: center;
         filter: drop-shadow(7px 7px 9px black);
         height: 25rem;   
         width: 95%;
+        border-radius: 1%;
         @include phablet{
             height: 15rem;
             width: 90%;
@@ -286,6 +294,7 @@ align-items: center;
 .contenedor_estado{
     background-color:$backgcolcontestado;
     height: 32rem;
+    border-radius: 1%;
     @include phablet{
         height: 25rem;
     }
@@ -325,15 +334,15 @@ align-items: center;
 }                 
 .img_dia_muertos , .img_posadas{ 
     width: 49% ;
-    height:23rem;
-    @include adaptableindex{
-        height:17rem ;
+    height:22rem;
+    @include tablet{
+        height:16rem ;
     }
-    @include adaptablephabletindex{
-        height: 14rem;
+    @include phablet{
+        height: 12rem;
     }
-    @include adaptablecelindex{
-        height: 8rem;
+    @include cel{
+        height: 6rem;
     }
 }
 .dia_muertos, .posadas, .dia_independencia { 
@@ -389,13 +398,13 @@ align-items: center;
     @include compumini{
         display: none;
     }
-    @include adaptableindex{
+    @include tablet{
         display: none;
     }
-    @include adaptablephabletindex{
+    @include phablet{
         display: none;
     }
-    @include adaptablecelindex {
+    @include cel {
         display: none ;
     } 
 }

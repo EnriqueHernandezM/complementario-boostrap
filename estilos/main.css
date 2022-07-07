@@ -143,7 +143,7 @@ body {
 .articulo_3index {
   grid-area: carta3;
   background-color: rgba(154, 134, 134, 0.485);
-  align-self: center;
+  align-self: flex-start;
   color: black;
   border-radius: 3%; }
 
@@ -191,7 +191,13 @@ body {
     filter: drop-shadow(5px 5px 6px black); }
 
 .carousel_index img {
-  height: 35rem; }
+  height: 25rem; }
+  @media screen and (max-width: 576px) {
+    .carousel_index img {
+      height: 20rem; } }
+  @media screen and (max-width: 360px) {
+    .carousel_index img {
+      height: 14rem; } }
 
 .animacion_index {
   grid-area: animacion;
@@ -271,7 +277,8 @@ body {
       height: 10rem; } }
 
 .tarjetas_lugares article {
-  background-color: rgba(197, 224, 247, 0.332); }
+  background-color: rgba(197, 224, 247, 0.332);
+  border-radius: 2%; }
   @media screen and (max-width: 576px) {
     .tarjetas_lugares article {
       padding-bottom: .11rem; } }
@@ -279,7 +286,8 @@ body {
 .tarjetas_lugares img {
   filter: drop-shadow(7px 7px 9px black);
   height: 25rem;
-  width: 95%; }
+  width: 95%;
+  border-radius: 1%; }
   @media screen and (max-width: 576px) {
     .tarjetas_lugares img {
       height: 15rem;
@@ -333,7 +341,8 @@ body {
 
 .contenedor_estado {
   background-color: rgba(197, 224, 247, 0.332);
-  height: 32rem; }
+  height: 32rem;
+  border-radius: 1%; }
   @media screen and (max-width: 576px) {
     .contenedor_estado {
       height: 25rem; } }
@@ -378,16 +387,16 @@ body {
 
 .img_dia_muertos, .img_posadas {
   width: 49%;
-  height: 23rem; }
+  height: 22rem; }
   @media screen and (max-width: 992px) {
     .img_dia_muertos, .img_posadas {
-      height: 17rem; } }
+      height: 16rem; } }
   @media screen and (max-width: 576px) {
     .img_dia_muertos, .img_posadas {
-      height: 14rem; } }
+      height: 12rem; } }
   @media screen and (max-width: 360px) {
     .img_dia_muertos, .img_posadas {
-      height: 8rem; } }
+      height: 6rem; } }
 
 .dia_muertos, .posadas, .dia_independencia {
   display: flex;
